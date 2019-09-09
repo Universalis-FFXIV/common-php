@@ -159,7 +159,8 @@ class Users
         // set cookie
         $cookie = new Cookie(self::COOKIE_SESSION_NAME);
         $cookie->setValue($session->getSession())->setMaxAge(self::COOKIE_SESSION_DURATION)->setPath('/')->save();
-        
+        $cookie->save();
+
         return $user;
     }
     
