@@ -6,8 +6,8 @@ use Carbon\Carbon;
 
 class SiteVersion
 {
-    const MAJOR  = 2;
-    const MINOR  = 2;
+    const MAJOR  = 1;
+    const MINOR  = 0;
     
     public static function get()
     {
@@ -16,7 +16,7 @@ class SiteVersion
         $commitVersion = $commits;
         $commitVersion = $commitVersion > 0 ? $commitVersion : 0;
         $commitVersion = str_pad($commitVersion, 2, '0', STR_PAD_LEFT);
-        $version       = sprintf('%s.%s.%s', self::MAJOR, self::MINOR, $commitVersion);
+        $version       = sprintf('%s.%s', self::MAJOR, self::MINOR);
         $time          = Carbon::createFromTimestamp($time)->format('jS M - g:i a') . ' (UTC)';
 
         return (Object)[
