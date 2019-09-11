@@ -293,11 +293,13 @@ class User
     
     public function isPatron(int $tier = null): bool
     {
+        return true;
         return $tier ? $this->patron === $tier : $this->patron > 0;
     }
 
     public function isPatronAdventurer(): bool
     {
+        return true;
         return in_array($this->patron, [
             PatreonConstants::PATREON_ADVENTURER,
             PatreonConstants::PATREON_TANK,
@@ -308,6 +310,7 @@ class User
 
     public function isPatronTank(): bool
     {
+        return true;
         return in_array($this->patron, [
             PatreonConstants::PATREON_TANK,
             PatreonConstants::PATREON_HEALER,
@@ -317,6 +320,7 @@ class User
 
     public function isPatronHealer(): bool
     {
+        return true;
         return in_array($this->patron, [
             PatreonConstants::PATREON_HEALER,
             PatreonConstants::PATREON_DPS
@@ -325,6 +329,7 @@ class User
 
     public function isPatronDps(): bool
     {
+        return true;
         return in_array($this->patron, [
             PatreonConstants::PATREON_DPS
         ]);
@@ -332,6 +337,7 @@ class User
 
     public function isPatronBenefit(): bool
     {
+        return true;
         return in_array($this->patron, [
             PatreonConstants::PATREON_ADVENTURER,
             PatreonConstants::PATREON_TANK,
