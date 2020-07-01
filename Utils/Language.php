@@ -17,13 +17,14 @@ class Language
         'fr',
         'ja',
         'kr',
-        'cn'
+        'chs'
     ];
     const LANGUAGES_ACTIVE = [
         'en',
         'de',
         'fr',
         'ja',
+        'chs'
     ];
 
     private static $lang = self::DEFAULT;
