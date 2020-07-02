@@ -23,6 +23,10 @@ class GameServers
 
         'Chaos'     => 3,
         'Light'     => 3,
+
+        'LuXingNiao' => 4,
+        'MoGuLi' => 4,
+        'MaoXiaoPang' => 4,
     ];
 
     const LIST_DC = [
@@ -76,7 +80,7 @@ class GameServers
             'Twintania',
         ],
 
-        // JP - Offline due to World Visit congestion issues.
+        // JP
         'Elemental' => [
             'Aegis',
             'Atomos',
@@ -116,6 +120,36 @@ class GameServers
             'Titan',
         ],
 
+        // CN
+        'LuXingNiao' => [
+            'HongYuHai',
+            'ShenYiZhiDi',
+            'LaNuoXiYa',
+            'HuanYingQunDao',
+            'MengYaChi',
+            'YuZhouHeYin',
+            'WoXianXiRan',
+            'ChenXiWangZuo'
+        ],
+        'MoGuLi' => [
+            'BaiYinXiang',
+            'BaiJinHuanXiang',
+            'ShenQuanHen',
+            'ChaoFengTing',
+            'LvRenZhanQiao',
+            'FuXiaoZhiJian',
+            'Longchaoshendian',
+            'MengYuBaoJing'
+        ],
+        'MaoXiaoPang' => [
+            'ZiShuiZhanQiao',
+            'YanXia',
+            'JingYuZhuangYuan',
+            'MoDuNa',
+            'HaiMaoChaWu',
+            'RouFengHaiWan',
+            'HuPoYuan'
+        ],
     ];
     
     /**
