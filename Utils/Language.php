@@ -66,10 +66,12 @@ class Language
      */
     public static function handle($data, string $language = null)
     {
-        $language = substr(strtolower($language ?: self::$lang), 0, 2);
+        if ($language !== 'chs') {
+            $language = substr(strtolower($language ?: self::$lang), 0, 2);
 
-        if (!in_array($language, self::LANGUAGES) && $language !== 'chs') {
-            $language = self::LANGUAGES[0];
+            if (!in_array($language, self::LANGUAGES)) {
+                $language = self::LANGUAGES[0];
+            }
         }
         
         if (is_object($data)) {
