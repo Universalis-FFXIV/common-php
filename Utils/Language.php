@@ -68,7 +68,7 @@ class Language
     {
         $language = substr(strtolower($language ?: self::$lang), 0, 2);
 
-        if (!in_array($language, self::LANGUAGES)) {
+        if (!in_array($language, self::LANGUAGES) && $language !== 'chs') {
             $language = self::LANGUAGES[0];
         }
         
