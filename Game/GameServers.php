@@ -157,7 +157,7 @@ class GameServers
      */
     public static function getServer(string $pvodied = null): string
     {
-        $server = ucwords($pvodied ?: Cookie::get('mogboard_server'));
+        $server = urldecode(ucwords($pvodied ?: Cookie::get('mogboard_server')));
         $worldMap = (Array) Redis::Cache()->get('xiv_World_Map');
         return in_array($server, $worldMap) ? $server : self::DEFAULT_SERVER;
     }
