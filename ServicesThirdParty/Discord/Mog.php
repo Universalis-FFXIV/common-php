@@ -8,9 +8,9 @@ use GuzzleHttp\RequestOptions;
 
 class Mog
 {
-    const ENDPOINT           = 'https://mog.xivapi.com';
-    const ENDPOINT_NOTIFY    = '/mog/notify';
-    const ENDPOINT_DM        = '/mog/dm';
+    const ENDPOINT           = 'http://localhost:6333';
+    const ENDPOINT_NOTIFY    = '/PostMessage';
+    const ENDPOINT_DM        = '/PostMessage';
     const ENDPOINT_IS_PATRON = '/users/patreon-tier';
     const METHOD_POST        = 'POST';
     const METHOD_GET         = 'GET';
