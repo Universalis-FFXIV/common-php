@@ -44,11 +44,11 @@ class Mog
      */
     public function sendMessage(int $channel = null, string $content = null, array $embed = null)
     {
-        $this->send(self::METHOD_POST, self::ENDPOINT_NOTIFY, [
+        /*$this->send(self::METHOD_POST, self::ENDPOINT_NOTIFY, [
             'channel' => $channel,
             'content' => $content,
             'embed' => $embed
-        ]);
+        ]);*/
     }
 
     /**
@@ -56,11 +56,11 @@ class Mog
      */
     public function sendDirectMessage(string $userId = null, string $content = null, array $embed = null)
     {
-        $this->send(self::METHOD_POST, self::ENDPOINT_DM, [
+        /*$this->send(self::METHOD_POST, self::ENDPOINT_DM, [
             'user_id' => $userId,
             'content' => $content,
             'embed' => $embed
-        ]);
+        ]);*/
     }
 
     /**
